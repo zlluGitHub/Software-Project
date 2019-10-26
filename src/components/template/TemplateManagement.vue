@@ -2,19 +2,18 @@
   <Layout>
     <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
       <Menu active-name="1-2" theme="light" width="auto" :class="menuitemClasses">
-        <MenuItem name="1-1" to="/sif/uc">
-          <Icon type="ios-contact-outline"></Icon>
-          <span>个人中心</span>
+        <MenuItem name="1-1">
+          <!-- <Icon type="ios-navigate"></Icon> -->
+          <span>任务列表</span>
         </MenuItem>
-        <MenuItem name="1-2" to="/sif/us">
-          <Icon type="ios-settings-outline"></Icon>
-          <span>安全设置</span>
+        <MenuItem name="1-2">
+          <Icon type="search"></Icon>
+          <span>测试列表</span>
         </MenuItem>
-        <MenuItem name="1-3" to="/sif/uol">
-         <Icon type="ios-ionitron-outline" />
-          <span>操作日志</span>
+        <MenuItem name="1-2">
+          <Icon type="search"></Icon>
+          <span>综合统计</span>
         </MenuItem>
-       
       </Menu>
     </Sider>
     <!-- <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
@@ -44,7 +43,7 @@
       </Menu>
     </Sider>-->
     <Layout>
-      <div style="overflow-x:hidden;padding:5px 15px;">
+      <div style="overflow-x:hidden;padding:10px 15px;">
         <router-view />
       </div>
     </Layout>

@@ -1,20 +1,23 @@
 <template>
   <Layout>
     <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
-      <Menu active-name="1-2" theme="light" width="auto" :class="menuitemClasses">
-        <MenuItem name="1-1" to="/sif/uc">
-          <Icon type="ios-contact-outline"></Icon>
-          <span>个人中心</span>
+      <Menu active-name="1-1" theme="light" width="auto" :class="menuitemClasses">
+        <MenuItem name="1-1">
+          <Icon type="ios-list-box-outline" size="16" />
+          <span>Bug追踪</span>
         </MenuItem>
-        <MenuItem name="1-2" to="/sif/us">
-          <Icon type="ios-settings-outline"></Icon>
-          <span>安全设置</span>
+        <MenuItem name="1-2" to="/task/test">
+          <Icon type="logo-reddit" size="16" />
+          <span>需求设计</span>
         </MenuItem>
-        <MenuItem name="1-3" to="/sif/uol">
-         <Icon type="ios-ionitron-outline" />
-          <span>操作日志</span>
+        <MenuItem name="1-3">
+          <Icon type="md-speedometer" size="16" />
+          <span>代码管理</span>
         </MenuItem>
-       
+        <MenuItem name="1-4">
+          <Icon type="md-speedometer" size="16" />
+          <span>综合分析</span>
+        </MenuItem>
       </Menu>
     </Sider>
     <!-- <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
@@ -44,7 +47,7 @@
       </Menu>
     </Sider>-->
     <Layout>
-      <div style="overflow-x:hidden;padding:5px 15px;">
+      <div style="overflow-x:hidden;padding:10px 15px;">
         <router-view />
       </div>
     </Layout>
@@ -72,6 +75,4 @@ export default {
 
 
 <style lang="scss"  scoped>
-
-
 </style>
