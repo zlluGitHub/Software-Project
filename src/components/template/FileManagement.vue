@@ -1,47 +1,37 @@
 <template>
   <Layout>
     <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
-      <Menu active-name="1-2" theme="light" width="auto" :class="menuitemClasses">
+      <Menu active-name="1-1" theme="light" width="auto" :class="menuitemClasses">
         <MenuItem name="1-1">
-          <!-- <Icon type="ios-navigate"></Icon> -->
-          <span>任务列表</span>
+        <i class="fa fa-clipboard"></i>
+          <span>项目文档</span>
         </MenuItem>
         <MenuItem name="1-2">
-          <Icon type="search"></Icon>
-          <span>测试列表</span>
+       <i class="fa fa-folder-open"></i>
+          <span>开发文档</span>
         </MenuItem>
-        <MenuItem name="1-2">
-          <Icon type="search"></Icon>
-          <span>综合统计</span>
+        <MenuItem name="1-3">
+         <i class="fa fa-user-secret"></i>
+          <span>我创建的</span>
+        </MenuItem>
+        <MenuItem name="1-4">
+        <i class="fa fa-star-o"></i>
+          <span>我的收藏</span>
+        </MenuItem>
+        <MenuItem name="1-5">
+         <i class="fa fa-file-archive-o"></i>
+          <span>我的 Wiki</span>
+        </MenuItem>
+        <MenuItem name="1-6">
+         <i class="fa fa-clock-o"></i>
+          <span>最近编辑</span>
+        </MenuItem>
+        <MenuItem name="1-7">
+         <i class="fa fa-shopping-basket"></i>
+          <span>回收站</span>
         </MenuItem>
       </Menu>
     </Sider>
-    <!-- <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
-      <Menu active-name="1-2" theme="light" width="auto" :open-names="['1']">
-        <Submenu name="1">
-          <template slot="title">
-            <Icon type="ios-navigate"></Icon>Item 1
-          </template>
-          <MenuItem name="1-1">Option 1</MenuItem>
-          <MenuItem name="1-2">Option 2</MenuItem>
-          <MenuItem name="1-3">Option 3</MenuItem>
-        </Submenu>
-        <Submenu name="2">
-          <template slot="title">
-            <Icon type="ios-keypad"></Icon>Item 2
-          </template>
-          <MenuItem name="2-1">Option 1</MenuItem>
-          <MenuItem name="2-2">Option 2</MenuItem>
-        </Submenu>
-        <Submenu name="3">
-          <template slot="title">
-            <Icon type="ios-analytics"></Icon>Item 3
-          </template>
-          <MenuItem name="3-1">Option 1</MenuItem>
-          <MenuItem name="3-2">Option 2</MenuItem>
-        </Submenu>
-      </Menu>
-    </Sider>-->
     <Layout>
       <div style="overflow-x:hidden;padding:10px 15px;">
         <router-view />

@@ -172,6 +172,7 @@ export default {
     a,
     a:hover {
       color: #fff;
+      padding: 0 12px;
     }
   }
   .ivu-layout {

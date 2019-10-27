@@ -81,8 +81,7 @@ export default {
         {
           title: "操作",
           slot: "action",
-          width: 140,
-          align: "center"
+          width: 120,
         }
       ],
       data6: [

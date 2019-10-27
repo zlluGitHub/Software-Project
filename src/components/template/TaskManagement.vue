@@ -3,7 +3,7 @@
     <Sider collapsible :collapsed-width="78" v-model="isCollapsed" :style="{background: '#fff'}">
       <Menu active-name="1-1" theme="light" width="auto" :class="menuitemClasses">
         <MenuItem name="1-1">
-          <Icon type="ios-list-box-outline" size="16" />
+         <i class="fa fa-bug"></i>
           <span>Bug追踪</span>
         </MenuItem>
         <MenuItem name="1-2" to="/task/test">

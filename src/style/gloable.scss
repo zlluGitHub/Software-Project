@@ -73,12 +73,24 @@ ul,ol{
 
 }
 
-.main .ivu-select-selection{
+.main .ivu-select-selection,.main .ivu-input,.main .ivu-input-group-append,.main .ivu-btn{
     border-radius: 0;
 }
 body .ivu-modal {
   margin-bottom: 50px;
   top: 50px;
+}
+.main .ivu-table-wrapper,.main .ivu-table{
+  overflow: initial;
+}
+.ivu-table-cell {
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  i{
+    cursor: pointer;
+  }
 }
 //字体
 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=SimSun]::before,

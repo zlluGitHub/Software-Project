@@ -57,12 +57,12 @@ export default new Router({
       path: '/file',
       name: 'fileManagement',
       component: () => import('../components/template/FileManagement.vue'),
-      redirect: '/file/index',//设置默认指向的路径
+      redirect: '/file/project',//设置默认指向的路径
       children: [ //这里就是二级路由的配置
         {
-          path: '/file/index',
-          name: 'index',
-          component: () => import('../components/viwe/default/Index.vue')
+          path: '/file/project',
+          name: 'projectfile',
+          component: () => import('../components/viwe/fileManagement/ProjectFile.vue')
         }
       ]
     },

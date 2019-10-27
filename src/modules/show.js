@@ -2,6 +2,11 @@ const state = {
     oneBugIsShow: false,
     solveBugIsShow: false,
     detailsIsShow: false,
+
+    fileDetailsIsShow: false,
+    fileMoveIsShow: false,
+    fileRenameIsShow: false,
+    fileAddIsShow: false,
 }
 const mutations = {
     setOneBugIsShow(state, data) {
@@ -11,10 +16,21 @@ const mutations = {
         state.solveBugIsShow = data;
     },
     setDetailsIsShow(state, data) {
-        console.log(data);
-        
         state.detailsIsShow = data;
-    }
+    },
+
+    setFileDetailsIsShow(state, data) {
+        state.fileDetailsIsShow = data;
+    },
+    setFileMoveIsShow(state, data) {
+        state.fileMoveIsShow = data;
+    },
+    setFileRenameIsShow(state, data) {
+        state.fileRenameIsShow = data;
+    },
+    setFileAddIsShow(state, data) {
+        state.fileAddIsShow = data;
+    },
 }
 //   const actions = {
 //     setArtile(context, data) {
